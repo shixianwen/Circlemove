@@ -226,14 +226,14 @@ public class CircleView1 extends View {
                     // Best practice to use VelocityTrackerCompat where possible.
                     xVelocity = VelocityTrackerCompat.getXVelocity(mVelocityTracker,
                             pointerId);
-                    xVelocity = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_MM, xVelocity, getResources().getDisplayMetrics());
+                    //xVelocity = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_MM, xVelocity, getResources().getDisplayMetrics());
 
                     time = System.currentTimeMillis();
                     System.out.println("time=" + time);
                     System.out.println("X velocity: " + xVelocity);
                     yVelocity = VelocityTrackerCompat.getYVelocity(mVelocityTracker, pointerId);
 
-                    yVelocity = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_MM, yVelocity, getResources().getDisplayMetrics());
+                    //yVelocity = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_MM, yVelocity, getResources().getDisplayMetrics());
                     System.out.println("Y velocity: " + yVelocity);
                     dataMsg = "currentX:" + currentX + " currentY:" + currentY + " xVelocity:" + xVelocity + " yVelocity:" + yVelocity + " currentTime:" + time + " parentWidth:" + parentWidth + " parentHeight:" + parentHeight;
 
